@@ -19,6 +19,8 @@
 		AC541A96280FC1BB00DA7818 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC541A95280FC1BB00DA7818 /* BaseViewController.swift */; };
 		AC541A99280FC21600DA7818 /* MenuTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC541A98280FC21600DA7818 /* MenuTabbarViewController.swift */; };
 		AC682285280FF3F60095B7C3 /* an_duong_vuong.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */; };
+		AC682287281005F20095B7C3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC682286281005F20095B7C3 /* BaseNavigationController.swift */; };
+		AC68228A281006250095B7C3 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC682289281006250095B7C3 /* AppTheme.swift */; };
 		ACB33AE0280FC2DA00157292 /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33ADF280FC2DA00157292 /* StoriesViewController.swift */; };
 		ACB33AE2280FC30300157292 /* Dynasty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE1280FC30300157292 /* Dynasty.storyboard */; };
 		ACB33AE4280FC31F00157292 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE3280FC31F00157292 /* Timeline.storyboard */; };
@@ -82,6 +84,8 @@
 		AC541A95280FC1BB00DA7818 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AC541A98280FC21600DA7818 /* MenuTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabbarViewController.swift; sourceTree = "<group>"; };
 		AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = an_duong_vuong.rtf; sourceTree = "<group>"; };
+		AC682286281005F20095B7C3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		AC682289281006250095B7C3 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		ACB33ADF280FC2DA00157292 /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
 		ACB33AE1280FC30300157292 /* Dynasty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dynasty.storyboard; sourceTree = "<group>"; };
 		ACB33AE3280FC31F00157292 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		AC541A8C280FC08000DA7818 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AC6822882810061B0095B7C3 /* Common */,
 				AC541A94280FC1A000DA7818 /* Extensions */,
 				AC541A93280FC18A00DA7818 /* Common */,
 				AC541A92280FC17D00DA7818 /* Base */,
@@ -292,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				AC541A95280FC1BB00DA7818 /* BaseViewController.swift */,
+				AC682286281005F20095B7C3 /* BaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -327,6 +333,14 @@
 				AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */,
 			);
 			path = rtf;
+			sourceTree = "<group>";
+		};
+		AC6822882810061B0095B7C3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC682289281006250095B7C3 /* AppTheme.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		ACB33AD9280FC25A00157292 /* Dynasty */ = {
@@ -707,6 +721,7 @@
 			files = (
 				ACB33AE0280FC2DA00157292 /* StoriesViewController.swift in Sources */,
 				ACB33B40280FDC3100157292 /* R.generated.swift in Sources */,
+				AC68228A281006250095B7C3 /* AppTheme.swift in Sources */,
 				AC541A4E280FAFEF00DA7818 /* AppDelegate.swift in Sources */,
 				ACB33AEF280FC38B00157292 /* UIView+Identifier.swift in Sources */,
 				AC541A99280FC21600DA7818 /* MenuTabbarViewController.swift in Sources */,
@@ -719,6 +734,7 @@
 				ACB33AF9280FC4A200157292 /* PersonViewController.swift in Sources */,
 				ACB33AF1280FC3A300157292 /* UIViewController.swift in Sources */,
 				AC541A96280FC1BB00DA7818 /* BaseViewController.swift in Sources */,
+				AC682287281005F20095B7C3 /* BaseNavigationController.swift in Sources */,
 				ACB33AFF280FC4D600157292 /* DynastyViewController.swift in Sources */,
 				ACB33B4D280FE7B200157292 /* PersonTableViewCell.swift in Sources */,
 				ACB33AF7280FC48F00157292 /* TerritoryViewController.swift in Sources */,

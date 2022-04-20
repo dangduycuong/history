@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DynastyViewController: UIViewController {
+class DynastyViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
