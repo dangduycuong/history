@@ -21,6 +21,8 @@
 		AC682285280FF3F60095B7C3 /* an_duong_vuong.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */; };
 		AC682287281005F20095B7C3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC682286281005F20095B7C3 /* BaseNavigationController.swift */; };
 		AC68228A281006250095B7C3 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC682289281006250095B7C3 /* AppTheme.swift */; };
+		AC68228C281009130095B7C3 /* lac_long_quan.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC68228B281009130095B7C3 /* lac_long_quan.rtf */; };
+		AC6822902810178A0095B7C3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68228F2810178A0095B7C3 /* R.generated.swift */; };
 		ACB33AE0280FC2DA00157292 /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33ADF280FC2DA00157292 /* StoriesViewController.swift */; };
 		ACB33AE2280FC30300157292 /* Dynasty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE1280FC30300157292 /* Dynasty.storyboard */; };
 		ACB33AE4280FC31F00157292 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE3280FC31F00157292 /* Timeline.storyboard */; };
@@ -35,7 +37,6 @@
 		ACB33AF9280FC4A200157292 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AF8280FC4A200157292 /* PersonViewController.swift */; };
 		ACB33AFC280FC4BC00157292 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AFB280FC4BC00157292 /* TimelineViewController.swift */; };
 		ACB33AFF280FC4D600157292 /* DynastyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AFE280FC4D600157292 /* DynastyViewController.swift */; };
-		ACB33B40280FDC3100157292 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B3F280FDC3100157292 /* R.generated.swift */; };
 		ACB33B46280FDFC900157292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33B45280FDFC900157292 /* Main.storyboard */; };
 		ACB33B48280FE32E00157292 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */; };
 		ACB33B4D280FE7B200157292 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B4B280FE7B200157292 /* PersonTableViewCell.swift */; };
@@ -86,6 +87,8 @@
 		AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = an_duong_vuong.rtf; sourceTree = "<group>"; };
 		AC682286281005F20095B7C3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		AC682289281006250095B7C3 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		AC68228B281009130095B7C3 /* lac_long_quan.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = lac_long_quan.rtf; sourceTree = "<group>"; };
+		AC68228F2810178A0095B7C3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		ACB33ADF280FC2DA00157292 /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
 		ACB33AE1280FC30300157292 /* Dynasty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dynasty.storyboard; sourceTree = "<group>"; };
 		ACB33AE3280FC31F00157292 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
@@ -100,7 +103,6 @@
 		ACB33AF8280FC4A200157292 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		ACB33AFB280FC4BC00157292 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		ACB33AFE280FC4D600157292 /* DynastyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynastyViewController.swift; sourceTree = "<group>"; };
-		ACB33B3F280FDC3100157292 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		ACB33B45280FDFC900157292 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		ACB33B4B280FE7B200157292 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
@@ -217,8 +219,8 @@
 		AC541A7F280FB27300DA7818 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AC68228F2810178A0095B7C3 /* R.generated.swift */,
 				AC682283280FF3DE0095B7C3 /* rtf */,
-				ACB33B3F280FDC3100157292 /* R.generated.swift */,
 				AC541A8F280FC0D000DA7818 /* StoryBoard */,
 				AC541A81280FB2B200DA7818 /* Strings */,
 				AC541A80280FB29800DA7818 /* Assets */,
@@ -331,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */,
+				AC68228B281009130095B7C3 /* lac_long_quan.rtf */,
 			);
 			path = rtf;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				ACB33AE6280FC32C00157292 /* Person.storyboard in Resources */,
 				AC541A85280FB35000DA7818 /* Assets.xcassets in Resources */,
 				ACB33AEA280FC34600157292 /* Stories.storyboard in Resources */,
+				AC68228C281009130095B7C3 /* lac_long_quan.rtf in Resources */,
 				ACB33AE8280FC33900157292 /* Territory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,12 +724,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB33AE0280FC2DA00157292 /* StoriesViewController.swift in Sources */,
-				ACB33B40280FDC3100157292 /* R.generated.swift in Sources */,
 				AC68228A281006250095B7C3 /* AppTheme.swift in Sources */,
 				AC541A4E280FAFEF00DA7818 /* AppDelegate.swift in Sources */,
 				ACB33AEF280FC38B00157292 /* UIView+Identifier.swift in Sources */,
 				AC541A99280FC21600DA7818 /* MenuTabbarViewController.swift in Sources */,
 				AC541A50280FAFEF00DA7818 /* SceneDelegate.swift in Sources */,
+				AC6822902810178A0095B7C3 /* R.generated.swift in Sources */,
 				ACB33B50280FE87900157292 /* UITableView+Extension.swift in Sources */,
 				ACB33AFC280FC4BC00157292 /* TimelineViewController.swift in Sources */,
 				ACB33AED280FC37500157292 /* Identifier.swift in Sources */,

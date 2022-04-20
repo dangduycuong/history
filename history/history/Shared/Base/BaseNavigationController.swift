@@ -14,9 +14,11 @@ class BaseNavigationController: UINavigationController {
         
         navigationBar.isTranslucent = false
         navigationBar.barTintColor = .white
-        if let font = UIFont(name: "Menlo-Bold", size: 22) {
+        if let font = UIFont(name: "Menlo-Bold", size: 20) {
             navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: AppColor.blueCustom, NSAttributedString.Key.font: font]
         }
         navigationBar.tintColor = .white
+        
+        
     }
 }

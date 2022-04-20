@@ -18,7 +18,8 @@ class PersonViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var listPerson: [PersonModel] = [
-        PersonModel(name: "An Dương Vương ", rtfFile: "an_duong_vuong")
+        PersonModel(name: "An Dương Vương ", rtfFile: "an_duong_vuong"),
+        PersonModel(name: "Lạc Long Quân", rtfFile: "lac_long_quan"),
     ]
     
     override func viewDidLoad() {

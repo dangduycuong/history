@@ -25,7 +25,7 @@ class PersonTableViewCell: UITableViewCell {
     
     func fillData(person: PersonModel) {
         avatarImageView.image = R.image.king()
-        nameLabel.text = "An Duong Vuong"
+        nameLabel.text = person.name
     }
     
 }

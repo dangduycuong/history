@@ -15,13 +15,15 @@ class PersonDetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-    
-    
+        self.title = person?.name
+        addBackButton()
         loadFile()
+        
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
+        textView.font = UIFont(name: "Menlo-Regular", size: 20)
     }
     
     func loadFile() {

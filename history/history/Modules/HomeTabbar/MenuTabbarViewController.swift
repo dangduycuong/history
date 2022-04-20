@@ -31,6 +31,8 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         self.delegate = self
         
+        navigationController?.navigationItem.title = "Tabbar"
+        
         dynastyVC = R.storyboard.dynasty.dynastyViewController()
         timelineVC = R.storyboard.timeline.timelineViewController()
         personVC = R.storyboard.person.personViewController()
@@ -59,20 +61,24 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
             }
         }
         
-//        for i in 0..<tabBar.items!.count {
-//            tabBar.items![i].title = TabbarTitle.all[i].text
-//            tabBar.items![i].imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-//        }
+        //        for i in 0..<tabBar.items!.count {
+        //            tabBar.items![i].title = TabbarTitle.all[i].text
+        //            tabBar.items![i].imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        //        }
     }
     
     //MARK: UITabbar Delegate
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        //        if viewController.isKind(of: ActionViewController.self) {
-        //            let vc =  ActionViewController()
+        //        if viewController.isKind(of: DynastyViewController.self) {
+        //            let vc =  R.storyboard.person.personDetailViewController()!
         //            vc.modalPresentationStyle = .overFullScreen
         //            self.present(vc, animated: true, completion: nil)
         //            return false
         //        }
+        
+        if viewController.isKind(of: DynastyViewController.self) {
+            print("cdd dang o DynastyViewController")
+        }
         return true
     }
     
@@ -81,6 +87,25 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
         //This method will be called when user changes tab.
         print("cdd didSelectItem")
         print(item.selectedImage as Any)
+    }
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        print("Selected item")
+        
+        if let index = tabBar.items?.firstIndex(of: item) {
+            tabBarController?.title = "\(index)"
+        }
+        
+    }
+    
+    // UITabBarControllerDelegate
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if let index = tabBarController.viewControllers?.firstIndex(of: viewController) {
+            tabBarController.title = TabbarTitle.all[index].text
+        }
+        print("Selected view controller")
+        viewController.title = "hh"
+        
     }
     
     

@@ -6,24 +6,28 @@
 //
 
 import UIKit
+import Material
 
 class BaseViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    var backButton: UIButton = {
+        let originalImage = UIImage(named: R.image.icons8Back.name)
+        let tintedImage = originalImage!.withRenderingMode(.alwaysTemplate)
+        let button = IconButton(image: tintedImage, tintColor: AppColor.blueCustom)
+        button.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 11, right: 0)
+        button.contentHorizontalAlignment = .left
+        return button
+    }()
+    
+    func addBackButton() {
+        backButton.addTarget(self, action: #selector(backButtonClicked(sender:)), for: .touchUpInside)
+        let backBarButton = UIBarButtonItem(customView: backButton)
+        navigationItem.leftBarButtonItem = backBarButton
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func backButtonClicked(sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
-    */
-
+    
 }
