@@ -19,12 +19,11 @@
 		AC541A96280FC1BB00DA7818 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC541A95280FC1BB00DA7818 /* BaseViewController.swift */; };
 		AC541A99280FC21600DA7818 /* MenuTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC541A98280FC21600DA7818 /* MenuTabbarViewController.swift */; };
 		AC682285280FF3F60095B7C3 /* an_duong_vuong.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */; };
+		AC682287281005F20095B7C3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC682286281005F20095B7C3 /* BaseNavigationController.swift */; };
+		AC68228A281006250095B7C3 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC682289281006250095B7C3 /* AppTheme.swift */; };
+		AC68228C281009130095B7C3 /* lac_long_quan.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC68228B281009130095B7C3 /* lac_long_quan.rtf */; };
+		AC6822902810178A0095B7C3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68228F2810178A0095B7C3 /* R.generated.swift */; };
 		ACB33AE0280FC2DA00157292 /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33ADF280FC2DA00157292 /* StoriesViewController.swift */; };
-		ACB33AE2280FC30300157292 /* Dynasty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE1280FC30300157292 /* Dynasty.storyboard */; };
-		ACB33AE4280FC31F00157292 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE3280FC31F00157292 /* Timeline.storyboard */; };
-		ACB33AE6280FC32C00157292 /* Person.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE5280FC32C00157292 /* Person.storyboard */; };
-		ACB33AE8280FC33900157292 /* Territory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE7280FC33900157292 /* Territory.storyboard */; };
-		ACB33AEA280FC34600157292 /* Stories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33AE9280FC34600157292 /* Stories.storyboard */; };
 		ACB33AED280FC37500157292 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AEC280FC37400157292 /* Identifier.swift */; };
 		ACB33AEF280FC38B00157292 /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AEE280FC38B00157292 /* UIView+Identifier.swift */; };
 		ACB33AF1280FC3A300157292 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AF0280FC3A300157292 /* UIViewController.swift */; };
@@ -33,13 +32,31 @@
 		ACB33AF9280FC4A200157292 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AF8280FC4A200157292 /* PersonViewController.swift */; };
 		ACB33AFC280FC4BC00157292 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AFB280FC4BC00157292 /* TimelineViewController.swift */; };
 		ACB33AFF280FC4D600157292 /* DynastyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AFE280FC4D600157292 /* DynastyViewController.swift */; };
-		ACB33B40280FDC3100157292 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B3F280FDC3100157292 /* R.generated.swift */; };
 		ACB33B46280FDFC900157292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33B45280FDFC900157292 /* Main.storyboard */; };
 		ACB33B48280FE32E00157292 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */; };
 		ACB33B4D280FE7B200157292 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B4B280FE7B200157292 /* PersonTableViewCell.swift */; };
 		ACB33B4E280FE7B200157292 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB33B4C280FE7B200157292 /* PersonTableViewCell.xib */; };
 		ACB33B50280FE87900157292 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B4F280FE87900157292 /* UITableView+Extension.swift */; };
 		D977AEC7FE67F6A206715010 /* Pods_history_historyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB4326FC3FA0A6CD7BD784 /* Pods_history_historyUITests.framework */; };
+		FA08BC2F2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA08BC2D2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodeld */; };
+		FA08BC322B8F1602000E08A1 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08BC312B8F1602000E08A1 /* PersonViewModel.swift */; };
+		FA08BC352B8F18EC000E08A1 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08BC342B8F18EC000E08A1 /* BaseTextField.swift */; };
+		FA08BC372B8F1D09000E08A1 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08BC362B8F1D09000E08A1 /* AddPersonViewController.swift */; };
+		FA08BC392B8F1D29000E08A1 /* AddPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08BC382B8F1D29000E08A1 /* AddPersonViewModel.swift */; };
+		FA08BC3B2B8F2E28000E08A1 /* PersonContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08BC3A2B8F2E28000E08A1 /* PersonContentDetailView.swift */; };
+		FA1D79FF2B8CD271008AB010 /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1D79FE2B8CD271008AB010 /* Person.json */; };
+		FA1D7A012B8CD7A4008AB010 /* dinh_tien_hoang.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA1D7A002B8CD7A4008AB010 /* dinh_tien_hoang.rtf */; };
+		FA1D7A2A2B8CEA0D008AB010 /* Stories.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1D7A292B8CEA0D008AB010 /* Stories.json */; };
+		FA1D7A2C2B8CF16A008AB010 /* StoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7A2B2B8CF16A008AB010 /* StoryDetailViewController.swift */; };
+		FA1D7A2F2B8D0F6A008AB010 /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7A2E2B8D0F6A008AB010 /* StoriesViewModel.swift */; };
+		FA1D7A312B8D0F86008AB010 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7A302B8D0F86008AB010 /* BaseViewModel.swift */; };
+		FA1D7A342B8D0FF6008AB010 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7A332B8D0FF6008AB010 /* StoryModel.swift */; };
+		FA1D7A362B8D123F008AB010 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7A352B8D123F008AB010 /* String+Extension.swift */; };
+		FA1D7A392B8D1482008AB010 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7A382B8D1482008AB010 /* StoryTableViewCell.swift */; };
+		FA30B7162B8DD7D700F64349 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B7152B8DD7D700F64349 /* UIView+Extension.swift */; };
+		FA30B7372B8E38D800F64349 /* animation_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = FA30B7362B8E38D800F64349 /* animation_loading.json */; };
+		FA30B7392B8E390E00F64349 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B7382B8E390E00F64349 /* LoadingViewController.swift */; };
+		FA30B73C2B8E3A3200F64349 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B73B2B8E3A3200F64349 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,12 +99,11 @@
 		AC541A95280FC1BB00DA7818 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AC541A98280FC21600DA7818 /* MenuTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabbarViewController.swift; sourceTree = "<group>"; };
 		AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = an_duong_vuong.rtf; sourceTree = "<group>"; };
+		AC682286281005F20095B7C3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		AC682289281006250095B7C3 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		AC68228B281009130095B7C3 /* lac_long_quan.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = lac_long_quan.rtf; sourceTree = "<group>"; };
+		AC68228F2810178A0095B7C3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		ACB33ADF280FC2DA00157292 /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
-		ACB33AE1280FC30300157292 /* Dynasty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dynasty.storyboard; sourceTree = "<group>"; };
-		ACB33AE3280FC31F00157292 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
-		ACB33AE5280FC32C00157292 /* Person.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Person.storyboard; sourceTree = "<group>"; };
-		ACB33AE7280FC33900157292 /* Territory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Territory.storyboard; sourceTree = "<group>"; };
-		ACB33AE9280FC34600157292 /* Stories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stories.storyboard; sourceTree = "<group>"; };
 		ACB33AEC280FC37400157292 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		ACB33AEE280FC38B00157292 /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
 		ACB33AF0280FC3A300157292 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -96,13 +112,32 @@
 		ACB33AF8280FC4A200157292 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		ACB33AFB280FC4BC00157292 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		ACB33AFE280FC4D600157292 /* DynastyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynastyViewController.swift; sourceTree = "<group>"; };
-		ACB33B3F280FDC3100157292 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		ACB33B45280FDFC900157292 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		ACB33B4B280FE7B200157292 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		ACB33B4C280FE7B200157292 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		ACB33B4F280FE87900157292 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		EE4B7504450F133AF14AE940 /* Pods_history.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_history.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA08BC2E2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonDataSourceModel.xcdatamodel; sourceTree = "<group>"; };
+		FA08BC312B8F1602000E08A1 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		FA08BC342B8F18EC000E08A1 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		FA08BC362B8F1D09000E08A1 /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+		FA08BC382B8F1D29000E08A1 /* AddPersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewModel.swift; sourceTree = "<group>"; };
+		FA08BC3A2B8F2E28000E08A1 /* PersonContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonContentDetailView.swift; sourceTree = "<group>"; };
+		FA1D79FE2B8CD271008AB010 /* Person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
+		FA1D7A002B8CD7A4008AB010 /* dinh_tien_hoang.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = dinh_tien_hoang.rtf; sourceTree = "<group>"; };
+		FA1D7A292B8CEA0D008AB010 /* Stories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stories.json; sourceTree = "<group>"; };
+		FA1D7A2B2B8CF16A008AB010 /* StoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailViewController.swift; sourceTree = "<group>"; };
+		FA1D7A2E2B8D0F6A008AB010 /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
+		FA1D7A302B8D0F86008AB010 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		FA1D7A332B8D0FF6008AB010 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		FA1D7A352B8D123F008AB010 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FA1D7A382B8D1482008AB010 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		FA30B7152B8DD7D700F64349 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FA30B7362B8E38D800F64349 /* animation_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_loading.json; sourceTree = "<group>"; };
+		FA30B7382B8E390E00F64349 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		FA30B73B2B8E3A3200F64349 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FA7A9EB62B8CBCDD00C0BB8A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +216,7 @@
 		AC541A4C280FAFEF00DA7818 /* history */ = {
 			isa = PBXGroup;
 			children = (
-				AC541A8D280FC09400DA7818 /* Configuration */,
+				FA7A9EB52B8CBCCF00C0BB8A /* Configuration */,
 				AC541A8C280FC08000DA7818 /* Shared */,
 				AC541A8B280FC07500DA7818 /* Modules */,
 				AC541A7F280FB27300DA7818 /* Resource */,
@@ -213,10 +248,11 @@
 		AC541A7F280FB27300DA7818 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FA08BC2C2B8F1373000E08A1 /* DataSource */,
+				FA1D79FD2B8CD256008AB010 /* JSON */,
+				AC68228F2810178A0095B7C3 /* R.generated.swift */,
 				AC682283280FF3DE0095B7C3 /* rtf */,
-				ACB33B3F280FDC3100157292 /* R.generated.swift */,
 				AC541A8F280FC0D000DA7818 /* StoryBoard */,
-				AC541A81280FB2B200DA7818 /* Strings */,
 				AC541A80280FB29800DA7818 /* Assets */,
 			);
 			path = Resource;
@@ -228,13 +264,6 @@
 				AC541A84280FB35000DA7818 /* Assets.xcassets */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		AC541A81280FB2B200DA7818 /* Strings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Strings;
 			sourceTree = "<group>";
 		};
 		AC541A8B280FC07500DA7818 /* Modules */ = {
@@ -253,18 +282,13 @@
 		AC541A8C280FC08000DA7818 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FA30B73A2B8E3A2100F64349 /* Utils */,
+				AC6822882810061B0095B7C3 /* Common */,
 				AC541A94280FC1A000DA7818 /* Extensions */,
 				AC541A93280FC18A00DA7818 /* Common */,
 				AC541A92280FC17D00DA7818 /* Base */,
 			);
 			path = Shared;
-			sourceTree = "<group>";
-		};
-		AC541A8D280FC09400DA7818 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 		AC541A8E280FC0A600DA7818 /* AppDelegate */ = {
@@ -278,12 +302,7 @@
 		AC541A8F280FC0D000DA7818 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				ACB33AE1280FC30300157292 /* Dynasty.storyboard */,
 				ACB33B45280FDFC900157292 /* Main.storyboard */,
-				ACB33AE3280FC31F00157292 /* Timeline.storyboard */,
-				ACB33AE5280FC32C00157292 /* Person.storyboard */,
-				ACB33AE7280FC33900157292 /* Territory.storyboard */,
-				ACB33AE9280FC34600157292 /* Stories.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -292,6 +311,9 @@
 			isa = PBXGroup;
 			children = (
 				AC541A95280FC1BB00DA7818 /* BaseViewController.swift */,
+				AC682286281005F20095B7C3 /* BaseNavigationController.swift */,
+				FA1D7A302B8D0F86008AB010 /* BaseViewModel.swift */,
+				FA30B7382B8E390E00F64349 /* LoadingViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -299,6 +321,7 @@
 		AC541A93280FC18A00DA7818 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FA08BC332B8F18D6000E08A1 /* TextFields */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -309,6 +332,8 @@
 				ACB33AEB280FC36700157292 /* Identifier */,
 				ACB33AF2280FC3BD00157292 /* Storyboard+Extensions.swift */,
 				ACB33B4F280FE87900157292 /* UITableView+Extension.swift */,
+				FA1D7A352B8D123F008AB010 /* String+Extension.swift */,
+				FA30B7152B8DD7D700F64349 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,8 +350,19 @@
 			isa = PBXGroup;
 			children = (
 				AC682284280FF3F60095B7C3 /* an_duong_vuong.rtf */,
+				AC68228B281009130095B7C3 /* lac_long_quan.rtf */,
+				FA1D7A002B8CD7A4008AB010 /* dinh_tien_hoang.rtf */,
 			);
 			path = rtf;
+			sourceTree = "<group>";
+		};
+		AC6822882810061B0095B7C3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B7352B8E37E500F64349 /* Components */,
+				AC682289281006250095B7C3 /* AppTheme.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		ACB33AD9280FC25A00157292 /* Dynasty */ = {
@@ -348,6 +384,7 @@
 		ACB33ADB280FC28200157292 /* Person */ = {
 			isa = PBXGroup;
 			children = (
+				FA08BC302B8F15DE000E08A1 /* ViewModel */,
 				ACB33B49280FE79200157292 /* View */,
 				ACB33AF4280FC45A00157292 /* Controller */,
 			);
@@ -365,6 +402,9 @@
 		ACB33ADD280FC29F00157292 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				FA1D7A372B8D145D008AB010 /* View */,
+				FA1D7A322B8D0FEE008AB010 /* Model */,
+				FA1D7A2D2B8D0F50008AB010 /* ViewModel */,
 				ACB33ADE280FC2C600157292 /* Controllers */,
 			);
 			path = Stories;
@@ -374,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB33ADF280FC2DA00157292 /* StoriesViewController.swift */,
+				FA1D7A2B2B8CF16A008AB010 /* StoryDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -393,6 +434,7 @@
 			children = (
 				ACB33AF8280FC4A200157292 /* PersonViewController.swift */,
 				ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */,
+				FA08BC362B8F1D09000E08A1 /* AddPersonViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -425,6 +467,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB33B4A280FE79900157292 /* PersonTableViewCell */,
+				FA08BC3A2B8F2E28000E08A1 /* PersonContentDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,6 +479,88 @@
 				ACB33B4C280FE7B200157292 /* PersonTableViewCell.xib */,
 			);
 			path = PersonTableViewCell;
+			sourceTree = "<group>";
+		};
+		FA08BC2C2B8F1373000E08A1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FA08BC2D2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodeld */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		FA08BC302B8F15DE000E08A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA08BC312B8F1602000E08A1 /* PersonViewModel.swift */,
+				FA08BC382B8F1D29000E08A1 /* AddPersonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA08BC332B8F18D6000E08A1 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				FA08BC342B8F18EC000E08A1 /* BaseTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		FA1D79FD2B8CD256008AB010 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B7362B8E38D800F64349 /* animation_loading.json */,
+				FA1D79FE2B8CD271008AB010 /* Person.json */,
+				FA1D7A292B8CEA0D008AB010 /* Stories.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FA1D7A2D2B8D0F50008AB010 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D7A2E2B8D0F6A008AB010 /* StoriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA1D7A322B8D0FEE008AB010 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D7A332B8D0FF6008AB010 /* StoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA1D7A372B8D145D008AB010 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D7A382B8D1482008AB010 /* StoryTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA30B7352B8E37E500F64349 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA30B73A2B8E3A2100F64349 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B73B2B8E3A3200F64349 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA7A9EB52B8CBCCF00C0BB8A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A9EB62B8CBCDD00C0BB8A /* Header.h */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,16 +673,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB33AE2280FC30300157292 /* Dynasty.storyboard in Resources */,
-				ACB33AE4280FC31F00157292 /* Timeline.storyboard in Resources */,
+				FA1D7A2A2B8CEA0D008AB010 /* Stories.json in Resources */,
 				ACB33B4E280FE7B200157292 /* PersonTableViewCell.xib in Resources */,
 				AC541A5A280FAFF200DA7818 /* LaunchScreen.storyboard in Resources */,
+				FA1D79FF2B8CD271008AB010 /* Person.json in Resources */,
 				ACB33B46280FDFC900157292 /* Main.storyboard in Resources */,
 				AC682285280FF3F60095B7C3 /* an_duong_vuong.rtf in Resources */,
-				ACB33AE6280FC32C00157292 /* Person.storyboard in Resources */,
 				AC541A85280FB35000DA7818 /* Assets.xcassets in Resources */,
-				ACB33AEA280FC34600157292 /* Stories.storyboard in Resources */,
-				ACB33AE8280FC33900157292 /* Territory.storyboard in Resources */,
+				FA30B7372B8E38D800F64349 /* animation_loading.json in Resources */,
+				AC68228C281009130095B7C3 /* lac_long_quan.rtf in Resources */,
+				FA1D7A012B8CD7A4008AB010 /* dinh_tien_hoang.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,22 +831,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB33AE0280FC2DA00157292 /* StoriesViewController.swift in Sources */,
-				ACB33B40280FDC3100157292 /* R.generated.swift in Sources */,
+				FA1D7A312B8D0F86008AB010 /* BaseViewModel.swift in Sources */,
+				FA1D7A2C2B8CF16A008AB010 /* StoryDetailViewController.swift in Sources */,
+				FA30B73C2B8E3A3200F64349 /* Utils.swift in Sources */,
+				AC68228A281006250095B7C3 /* AppTheme.swift in Sources */,
+				FA1D7A2F2B8D0F6A008AB010 /* StoriesViewModel.swift in Sources */,
 				AC541A4E280FAFEF00DA7818 /* AppDelegate.swift in Sources */,
 				ACB33AEF280FC38B00157292 /* UIView+Identifier.swift in Sources */,
 				AC541A99280FC21600DA7818 /* MenuTabbarViewController.swift in Sources */,
+				FA08BC392B8F1D29000E08A1 /* AddPersonViewModel.swift in Sources */,
 				AC541A50280FAFEF00DA7818 /* SceneDelegate.swift in Sources */,
+				AC6822902810178A0095B7C3 /* R.generated.swift in Sources */,
+				FA08BC3B2B8F2E28000E08A1 /* PersonContentDetailView.swift in Sources */,
 				ACB33B50280FE87900157292 /* UITableView+Extension.swift in Sources */,
 				ACB33AFC280FC4BC00157292 /* TimelineViewController.swift in Sources */,
 				ACB33AED280FC37500157292 /* Identifier.swift in Sources */,
 				ACB33B48280FE32E00157292 /* PersonDetailViewController.swift in Sources */,
+				FA30B7162B8DD7D700F64349 /* UIView+Extension.swift in Sources */,
+				FA08BC2F2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodeld in Sources */,
+				FA1D7A392B8D1482008AB010 /* StoryTableViewCell.swift in Sources */,
 				ACB33AF3280FC3BD00157292 /* Storyboard+Extensions.swift in Sources */,
 				ACB33AF9280FC4A200157292 /* PersonViewController.swift in Sources */,
+				FA1D7A362B8D123F008AB010 /* String+Extension.swift in Sources */,
+				FA08BC322B8F1602000E08A1 /* PersonViewModel.swift in Sources */,
 				ACB33AF1280FC3A300157292 /* UIViewController.swift in Sources */,
+				FA08BC372B8F1D09000E08A1 /* AddPersonViewController.swift in Sources */,
 				AC541A96280FC1BB00DA7818 /* BaseViewController.swift in Sources */,
+				AC682287281005F20095B7C3 /* BaseNavigationController.swift in Sources */,
+				FA08BC352B8F18EC000E08A1 /* BaseTextField.swift in Sources */,
 				ACB33AFF280FC4D600157292 /* DynastyViewController.swift in Sources */,
+				FA30B7392B8E390E00F64349 /* LoadingViewController.swift in Sources */,
 				ACB33B4D280FE7B200157292 /* PersonTableViewCell.swift in Sources */,
 				ACB33AF7280FC48F00157292 /* TerritoryViewController.swift in Sources */,
+				FA1D7A342B8D0FF6008AB010 /* StoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,7 +1043,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -910,6 +1052,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vmo.history;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/history/Configuration/Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -931,7 +1074,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1085,6 +1228,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA08BC2D2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA08BC2E2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodel */,
+			);
+			currentVersion = FA08BC2E2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodel */;
+			path = PersonDataSourceModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AC541A42280FAFEF00DA7818 /* Project object */;
 }

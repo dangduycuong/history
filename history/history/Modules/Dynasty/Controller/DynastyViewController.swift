@@ -7,14 +7,38 @@
 
 import UIKit
 
-class DynastyViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class LabelInset: UILabel {
+    var contentInset: UIEdgeInsets = .zero {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    override func drawText(in rect: CGRect) {
+        super.drawText(in: rect.inset(by: contentInset))
     }
     
+    override public var intrinsicContentSize: CGSize {
+        let size = super.intrinsicContentSize
+        return CGSize(width: size.width + contentInset.left + contentInset.right, height: size.height + contentInset.top + contentInset.bottom)
+    }
+}
+
+class DynastyViewController: BaseViewController {
+
+    override func loadView() {
+        super.loadView()
+        prepareForViewController()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        Triều đại
+    }
+    
+    private func prepareForViewController() {
+        navigationController?.navigationBar.isHidden = true
+        addBackground()
+    }
 
     /*
     // MARK: - Navigation
