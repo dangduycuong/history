@@ -1,5 +1,5 @@
 //
-//  AddPersonViewModel.swift
+//  AddDynastyViewModel.swift
 //  history
 //
 //  Created by cuongdd on 28/02/2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AddPersonViewModel: BaseViewModel {
+class AddDynastyViewModel: BaseViewModel {
     
     var name: String?
     var url: String?
@@ -32,11 +32,11 @@ class AddPersonViewModel: BaseViewModel {
         if validateInput() == false {
             return
         }
-        let user = PersonModel(context: context)
-
+        let dynastyModel = DynastyModel(context: context)
+        
         // Assign values to the entity's properties
-        user.name = name
-        user.url = url
+        dynastyModel.name = name
+        dynastyModel.url = url
         // To save the new entity to the persistent store, call
         // save on the context
         do {

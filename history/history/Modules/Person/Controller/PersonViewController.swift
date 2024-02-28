@@ -13,29 +13,6 @@ struct FileModel: Codable {
 }
 
 class PersonViewController: BaseViewController {
-    private lazy var searchTextField: BaseTextField = {
-        let textField = BaseTextField()
-        textField.placeholder = "Tìm kiếm theo tên"
-        textField.layer.borderColor = UIColor.blue.cgColor
-        textField.layer.borderWidth = 1
-        textField.clearButtonMode = .whileEditing
-        textField.layer.cornerRadius = 4
-        textField.delegate = self
-        return textField
-    }()
-    
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorStyle = .none
-        tableView.showsVerticalScrollIndicator = false
-        tableView.keyboardDismissMode = .onDrag
-        tableView.backgroundColor = UIColor.clear
-        tableView.registerCell(PersonTableViewCell.self)
-        
-        return tableView
-    }()
     
     private lazy var personContentDetailView: PersonContentDetailView = {
         let personContentDetailView = PersonContentDetailView()
@@ -81,13 +58,16 @@ class PersonViewController: BaseViewController {
             .left(16)
             .right(16)
             .height(40)
+        searchTextField.delegate = self
         
         view.layout(tableView)
             .below(searchTextField, 8)
             .left()
             .bottomSafe()
             .right()
-        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerCell(PersonTableViewCell.self)
         addAddDataButton()
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(sender:)))
@@ -164,8 +144,10 @@ extension PersonViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PersonDetailViewController()
-        vc.personModel = viewModel.fetchedPersonDataSource.value[indexPath.row]
+        let vc = DetailDataViewController()
+        let personModel = viewModel.fetchedPersonDataSource.value[indexPath.row]
+        vc.titleText = personModel.name
+        vc.url = personModel.url
         navigationController?.pushViewController(vc, animated: true)
     }
     

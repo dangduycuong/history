@@ -8,38 +8,6 @@
 import UIKit
 
 class StoriesViewController: BaseViewController {
-    private lazy var searchView: UIView = {
-        let view = UIView()
-        return view
-    }()
-    
-    private lazy var searchImageView: UIImageView = {
-        let imageView = UIImageView()
-        return imageView
-    }()
-    
-    private lazy var searchTextField: UITextField = {
-        let textField = UITextField()
-        textField.delegate = self
-        textField.clearButtonMode = .whileEditing
-        textField.borderStyle = .none
-        textField.font = UIFont.systemFont(ofSize: 20)
-        textField.placeholder = "Nhập tên điển cố"
-        return textField
-    }()
-    
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorStyle = .none
-        tableView.showsVerticalScrollIndicator = false
-        tableView.keyboardDismissMode = .onDrag
-        tableView.backgroundColor = UIColor.clear
-        tableView.register(with: StoryTableViewCell.self)
-        
-        return tableView
-    }()
     
     private var viewModel = StoriesViewModel()
     
@@ -69,38 +37,24 @@ class StoriesViewController: BaseViewController {
     private func prepareForViewController() {
         addBackground()
         addTitle(title: "Điển Tích - Điển Cố")
-        view.layout(searchView)
+        view.layout(searchTextField)
             .below(titleLabel, 16)
             .left(16)
             .right(16)
             .height(40)
         
-        searchView.layer.cornerRadius = 8
-        searchView.layer.shadowColor = UIColor.black.cgColor
-        searchView.layer.shadowOpacity = 0.5
-        searchView.layer.shadowOffset = .zero
-        searchView.layer.shadowRadius = 8
-        searchView.backgroundColor = UIColor.white
-        
-        searchView.layout(searchImageView)
-            .centerY()
-            .left(8)
-            .width(24)
-            .height(24)
-        
-        searchImageView.image = R.image.icons8Search()
-        
-        searchView.layout(searchTextField)
-            .top(4)
-            .left(40)
-            .bottom(4)
-            .right(4)
+        searchTextField.delegate = self
+        searchTextField.placeholder = "Nhập tên điển cố"
         
         view.layout(tableView)
-            .below(searchView, 16)
+            .below(searchTextField, 16)
             .left()
             .bottomSafe()
             .right()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(with: StoryTableViewCell.self)
     }
     
     private func addObserver() {

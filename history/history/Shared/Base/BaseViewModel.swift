@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import UIKit
 
 class BaseViewModel {
-    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 }

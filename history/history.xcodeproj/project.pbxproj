@@ -33,7 +33,6 @@
 		ACB33AFC280FC4BC00157292 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AFB280FC4BC00157292 /* TimelineViewController.swift */; };
 		ACB33AFF280FC4D600157292 /* DynastyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33AFE280FC4D600157292 /* DynastyViewController.swift */; };
 		ACB33B46280FDFC900157292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB33B45280FDFC900157292 /* Main.storyboard */; };
-		ACB33B48280FE32E00157292 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */; };
 		ACB33B4D280FE7B200157292 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B4B280FE7B200157292 /* PersonTableViewCell.swift */; };
 		ACB33B4E280FE7B200157292 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB33B4C280FE7B200157292 /* PersonTableViewCell.xib */; };
 		ACB33B50280FE87900157292 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB33B4F280FE87900157292 /* UITableView+Extension.swift */; };
@@ -57,6 +56,10 @@
 		FA30B7372B8E38D800F64349 /* animation_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = FA30B7362B8E38D800F64349 /* animation_loading.json */; };
 		FA30B7392B8E390E00F64349 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B7382B8E390E00F64349 /* LoadingViewController.swift */; };
 		FA30B73C2B8E3A3200F64349 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B73B2B8E3A3200F64349 /* Utils.swift */; };
+		FA3104D82B8F5B35004910DA /* AddDynastyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3104D72B8F5B35004910DA /* AddDynastyViewController.swift */; };
+		FA3104DB2B8F5BFE004910DA /* AddDynastyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3104DA2B8F5BFE004910DA /* AddDynastyViewModel.swift */; };
+		FA3104DF2B8F5F72004910DA /* DetailDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3104DE2B8F5F72004910DA /* DetailDataViewController.swift */; };
+		FA3104E12B8F6174004910DA /* DynastyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3104E02B8F6174004910DA /* DynastyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +116,6 @@
 		ACB33AFB280FC4BC00157292 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		ACB33AFE280FC4D600157292 /* DynastyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynastyViewController.swift; sourceTree = "<group>"; };
 		ACB33B45280FDFC900157292 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		ACB33B4B280FE7B200157292 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		ACB33B4C280FE7B200157292 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		ACB33B4F280FE87900157292 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
@@ -137,6 +139,10 @@
 		FA30B7362B8E38D800F64349 /* animation_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_loading.json; sourceTree = "<group>"; };
 		FA30B7382B8E390E00F64349 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FA30B73B2B8E3A3200F64349 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FA3104D72B8F5B35004910DA /* AddDynastyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDynastyViewController.swift; sourceTree = "<group>"; };
+		FA3104DA2B8F5BFE004910DA /* AddDynastyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDynastyViewModel.swift; sourceTree = "<group>"; };
+		FA3104DE2B8F5F72004910DA /* DetailDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataViewController.swift; sourceTree = "<group>"; };
+		FA3104E02B8F6174004910DA /* DynastyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynastyViewModel.swift; sourceTree = "<group>"; };
 		FA7A9EB62B8CBCDD00C0BB8A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -269,6 +275,7 @@
 		AC541A8B280FC07500DA7818 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FA3104DC2B8F5F4C004910DA /* DetailData */,
 				ACB33ADD280FC29F00157292 /* Stories */,
 				ACB33ADC280FC29500157292 /* Territory */,
 				ACB33ADB280FC28200157292 /* Person */,
@@ -368,6 +375,7 @@
 		ACB33AD9280FC25A00157292 /* Dynasty */ = {
 			isa = PBXGroup;
 			children = (
+				FA3104D92B8F5BED004910DA /* ViewModel */,
 				ACB33AFD280FC4C700157292 /* Controller */,
 			);
 			path = Dynasty;
@@ -433,7 +441,6 @@
 			isa = PBXGroup;
 			children = (
 				ACB33AF8280FC4A200157292 /* PersonViewController.swift */,
-				ACB33B47280FE32E00157292 /* PersonDetailViewController.swift */,
 				FA08BC362B8F1D09000E08A1 /* AddPersonViewController.swift */,
 			);
 			path = Controller;
@@ -459,6 +466,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB33AFE280FC4D600157292 /* DynastyViewController.swift */,
+				FA3104D72B8F5B35004910DA /* AddDynastyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -553,6 +561,31 @@
 				FA30B73B2B8E3A3200F64349 /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA3104D92B8F5BED004910DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA3104DA2B8F5BFE004910DA /* AddDynastyViewModel.swift */,
+				FA3104E02B8F6174004910DA /* DynastyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA3104DC2B8F5F4C004910DA /* DetailData */ = {
+			isa = PBXGroup;
+			children = (
+				FA3104DD2B8F5F5D004910DA /* Controller */,
+			);
+			path = DetailData;
+			sourceTree = "<group>";
+		};
+		FA3104DD2B8F5F5D004910DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA3104DE2B8F5F72004910DA /* DetailDataViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		FA7A9EB52B8CBCCF00C0BB8A /* Configuration */ = {
@@ -836,6 +869,7 @@
 				FA30B73C2B8E3A3200F64349 /* Utils.swift in Sources */,
 				AC68228A281006250095B7C3 /* AppTheme.swift in Sources */,
 				FA1D7A2F2B8D0F6A008AB010 /* StoriesViewModel.swift in Sources */,
+				FA3104D82B8F5B35004910DA /* AddDynastyViewController.swift in Sources */,
 				AC541A4E280FAFEF00DA7818 /* AppDelegate.swift in Sources */,
 				ACB33AEF280FC38B00157292 /* UIView+Identifier.swift in Sources */,
 				AC541A99280FC21600DA7818 /* MenuTabbarViewController.swift in Sources */,
@@ -846,12 +880,14 @@
 				ACB33B50280FE87900157292 /* UITableView+Extension.swift in Sources */,
 				ACB33AFC280FC4BC00157292 /* TimelineViewController.swift in Sources */,
 				ACB33AED280FC37500157292 /* Identifier.swift in Sources */,
-				ACB33B48280FE32E00157292 /* PersonDetailViewController.swift in Sources */,
 				FA30B7162B8DD7D700F64349 /* UIView+Extension.swift in Sources */,
+				FA3104E12B8F6174004910DA /* DynastyViewModel.swift in Sources */,
 				FA08BC2F2B8F1399000E08A1 /* PersonDataSourceModel.xcdatamodeld in Sources */,
 				FA1D7A392B8D1482008AB010 /* StoryTableViewCell.swift in Sources */,
+				FA3104DB2B8F5BFE004910DA /* AddDynastyViewModel.swift in Sources */,
 				ACB33AF3280FC3BD00157292 /* Storyboard+Extensions.swift in Sources */,
 				ACB33AF9280FC4A200157292 /* PersonViewController.swift in Sources */,
+				FA3104DF2B8F5F72004910DA /* DetailDataViewController.swift in Sources */,
 				FA1D7A362B8D123F008AB010 /* String+Extension.swift in Sources */,
 				FA08BC322B8F1602000E08A1 /* PersonViewModel.swift in Sources */,
 				ACB33AF1280FC3A300157292 /* UIViewController.swift in Sources */,

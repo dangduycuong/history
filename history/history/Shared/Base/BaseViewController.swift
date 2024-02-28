@@ -9,6 +9,26 @@ import UIKit
 
 class BaseViewController: UIViewController {
     let disposeBag = DisposeBag()
+    lazy var searchTextField: BaseTextField = {
+        let textField = BaseTextField()
+        textField.placeholder = "Tìm kiếm theo tên"
+        textField.layer.borderColor = UIColor.blue.cgColor
+        textField.layer.borderWidth = 1
+        textField.clearButtonMode = .whileEditing
+        textField.layer.cornerRadius = 4
+        
+        return textField
+    }()
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+        tableView.keyboardDismissMode = .onDrag
+        tableView.backgroundColor = UIColor.clear
+        
+        return tableView
+    }()
     
     lazy var addDataImageView: UIImageView = {
         let imageView = UIImageView()

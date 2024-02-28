@@ -1,5 +1,5 @@
 //
-//  PersonViewModel.swift
+//  DynastyViewModel.swift
 //  history
 //
 //  Created by cuongdd on 28/02/2024.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class PersonViewModel: BaseViewModel {
-    var fetchedPersonDataSource = BehaviorRelay<[PersonModel]>(value: [])
-    private var listPersonModel = [PersonModel]()
+class DynastyViewModel: BaseViewModel {
+    var fetchedPersonDataSource = BehaviorRelay<[DynastyModel]>(value: [])
+    private var listDynastyModel = [DynastyModel]()
     
     var searchText: String? = "" {
         didSet {
@@ -19,8 +19,8 @@ class PersonViewModel: BaseViewModel {
     
     func loadData() {
         do {
-            let items = try context.fetch(PersonModel.fetchRequest())
-            listPersonModel = items
+            let items = try context.fetch(DynastyModel.fetchRequest())
+            listDynastyModel = items
             fetchedPersonDataSource.accept(items)
         } catch {
             print("Couldn't Fetch Data")
@@ -58,11 +58,11 @@ class PersonViewModel: BaseViewModel {
     func filterPerson() {
         guard let text = searchText?.lowercased().unaccent() else { return }
         if text == "" {
-            fetchedPersonDataSource.accept(listPersonModel)
+            fetchedPersonDataSource.accept(listDynastyModel)
             return
         }
         
-        let list = listPersonModel.filter { (model: PersonModel) in
+        let list = listDynastyModel.filter { (model: DynastyModel) in
             let name = model.name?.lowercased().unaccent()
             if name?.range(of: text) != nil {
                 return true

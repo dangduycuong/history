@@ -1,16 +1,18 @@
 //
-//  PersonDetailViewController.swift
+//  DetailDataViewController.swift
 //  history
 //
-//  Created by cuongdd on 20/04/2022.
+//  Created by cuongdd on 28/02/2024.
 //
 
 import WebKit
 import UIKit
 
-class PersonDetailViewController: BaseViewController {
+class DetailDataViewController: BaseViewController {
     var webView: WKWebView!
-    var personModel: PersonModel?
+    
+    var titleText: String?
+    var url: String?
     
     override func loadView() {
         super.loadView()
@@ -19,20 +21,28 @@ class PersonDetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
-        guard let string = personModel?.url else { return }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadData()
+    }
+    
+    private func loadData() {
+        guard let string = url else { return }
         guard let url = URL(string: string) else { return }
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
+        
+        //        for family in UIFont.familyNames.sorted() {
+        //            let names = UIFont.fontNames(forFamilyName: family)
+        //            print("Family: \(family) Font names: \(names)")
+        //        }
     }
     
     private func prepareForViewController() {
         addBackground()
-        addTitle(title: personModel?.name)
+        addTitle(title: titleText)
         addBackButton()
         webView = WKWebView()
         webView.navigationDelegate = self
@@ -61,7 +71,7 @@ class PersonDetailViewController: BaseViewController {
     }
 }
 
-extension PersonDetailViewController: WKNavigationDelegate {
+extension DetailDataViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         Utils.showLoadingIndicator()
     }
@@ -69,4 +79,9 @@ extension PersonDetailViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         Utils.hideLoadingIndicator()
     }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        Utils.hideLoadingIndicator()
+    }
 }
+
