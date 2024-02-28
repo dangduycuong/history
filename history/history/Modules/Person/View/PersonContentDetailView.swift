@@ -117,6 +117,17 @@ class PersonContentDetailView: UIView {
         
         setupPlaceholder(label: namePlaceholderLabel, textView: nameTextView, title: "Nhập tên...")
         setupPlaceholder(label: urlPlaceholderLabel, textView: urlTextView, title: "Nhập url...")
+        
+        setShadow(view: self)
+        setShadow(view: cancelButton)
+        setShadow(view: saveButton)
+    }
+    
+    private func setShadow(view: UIView) {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 4
     }
     
     private func setupPlaceholder(label: UILabel, textView: UITextView, title: String) {
