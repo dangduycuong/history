@@ -20,9 +20,10 @@ class PersonViewController: BaseViewController {
         textField.layer.borderWidth = 1
         textField.clearButtonMode = .whileEditing
         textField.layer.cornerRadius = 4
+        textField.delegate = self
         return textField
     }()
-
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
@@ -54,7 +55,7 @@ class PersonViewController: BaseViewController {
         super.viewDidLoad()
         
         addObserver()
-        viewModel.loadData()
+        
         let fileManager = FileManager.default
         let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
         do {
@@ -64,6 +65,11 @@ class PersonViewController: BaseViewController {
         } catch {
             print("Error while enumerating files \(documentsURL.path): \(error.localizedDescription)")
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.loadData()
     }
     
     private func prepareForViewController() {
@@ -133,7 +139,7 @@ class PersonViewController: BaseViewController {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         self.lastContentOffset = scrollView.contentOffset.y
     }
-
+    
     // while scrolling this delegate is being called so you may now check which direction your scrollView is being scrolled to
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if self.lastContentOffset < scrollView.contentOffset.y {
@@ -153,7 +159,7 @@ extension PersonViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(cellType: PersonTableViewCell.self, forIndexPath: indexPath)
-        cell.fillData(title: viewModel.fetchedPersonDataSource.value[indexPath.row].name)
+        cell.fillData(title: viewModel.fetchedPersonDataSource.value[indexPath.row].name, searchText: viewModel.searchText)
         return cell
     }
     
@@ -171,6 +177,12 @@ extension PersonViewController: UITableViewDelegate, UITableViewDataSource {
         if editingStyle == .delete {
             viewModel.deleteData(indexPath.row)
         }
+    }
+}
+
+extension PersonViewController: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        viewModel.searchText = searchTextField.text
     }
 }
 

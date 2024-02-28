@@ -64,6 +64,7 @@ class AddPersonViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        addObserver()
     }
     
 
@@ -93,9 +94,15 @@ class AddPersonViewController: BaseViewController {
             .right(16)
             .height(40)
         
+        view.layout(dateTextField)
+            .below(urlTextField, 16)
+            .left(16)
+            .right(16)
+            .height(40)
+        
         view.layout(saveButton)
             .centerX()
-            .below(urlTextField, 32)
+            .below(dateTextField, 32)
             .width(150)
             .height(40)
         
@@ -103,6 +110,8 @@ class AddPersonViewController: BaseViewController {
         saveButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 21)
         saveButton.backgroundColor = UIColor.blue
         saveButton.layer.cornerRadius = 4
+        
+        setupDatePicker()
     }
     
     private func setupDatePicker() {
@@ -117,6 +126,24 @@ class AddPersonViewController: BaseViewController {
         datePickerView.translatesAutoresizingMaskIntoConstraints = false
         
         dateTextField.inputView = datePickerView
+    }
+    
+    private func addObserver() {
+        viewModel.finishedAddData = {
+            self.showAlert()
+        }
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Thông báo", message: "Đã thêm dữ liệu thành công", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Tiếp tục", style: .default) { _ in
+        })
+        
+        alert.addAction(UIAlertAction(title: "Trở lại", style: .cancel) { _ in
+            self.navigationController?.popViewController(animated: true)
+        })
+
+        present(alert, animated: true)
     }
     
     @objc func handleDatePicker(sender: UIDatePicker) {

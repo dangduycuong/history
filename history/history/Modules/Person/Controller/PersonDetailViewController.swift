@@ -45,19 +45,19 @@ class PersonDetailViewController: BaseViewController {
     }
     
     func loadFile() {
-//        guard let fileName = personModel?.name else { return }
-//        if let rtfPath = Bundle.main.url(forResource: fileName, withExtension: "rtf") {
-//            do {
-//                let attributedStringWithRtf: NSAttributedString = try NSAttributedString(
-//                    url: rtfPath, options: [
-//                        NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtf
-//                    ], documentAttributes: nil)
-//                
-//                textView.attributedText = attributedStringWithRtf
-//            } catch let error {
-//                print("Got an error \(error)")
-//            }
-//        }
+        //        guard let fileName = personModel?.name else { return }
+        //        if let rtfPath = Bundle.main.url(forResource: fileName, withExtension: "rtf") {
+        //            do {
+        //                let attributedStringWithRtf: NSAttributedString = try NSAttributedString(
+        //                    url: rtfPath, options: [
+        //                        NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtf
+        //                    ], documentAttributes: nil)
+        //
+        //                textView.attributedText = attributedStringWithRtf
+        //            } catch let error {
+        //                print("Got an error \(error)")
+        //            }
+        //        }
     }
 }
 

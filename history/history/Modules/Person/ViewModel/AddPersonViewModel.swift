@@ -8,19 +8,10 @@
 import Foundation
 
 class AddPersonViewModel: BaseViewModel {
-    var fetchedPersonDataSource = BehaviorRelay<[PersonModel]>(value: [])
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var name: String?
     var url: String?
-    
-    func loadData() {
-        do {
-            let items = try context.fetch(PersonModel.fetchRequest())
-            fetchedPersonDataSource.accept(items)
-        } catch {
-            print("Couldn't Fetch Data")
-        }
-    }
+    var finishedAddData: (() -> Void) = {}
     
     func validateInput() -> Bool {
         if name == nil {
@@ -50,8 +41,8 @@ class AddPersonViewModel: BaseViewModel {
         // save on the context
         do {
             try context.save()
-        }
-        catch {
+            finishedAddData()
+        } catch {
             // Handle Error
         }
     }
