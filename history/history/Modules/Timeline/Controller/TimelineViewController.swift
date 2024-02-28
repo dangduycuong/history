@@ -8,6 +8,10 @@
 import UIKit
 
 class TimelineViewController: BaseViewController {
+    override func loadView() {
+        super.loadView()
+        prepareForViewController()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +29,9 @@ class TimelineViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    private func prepareForViewController() {
+        addBackground()
+        
+    }
 
 }

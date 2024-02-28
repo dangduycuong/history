@@ -24,27 +24,21 @@ class LabelInset: UILabel {
 }
 
 class DynastyViewController: BaseViewController {
-    
-    fileprivate lazy var titleLabel: UILabel = {
-        let label = LabelInset()
-        label.font = UIFont(name: "Menlo-Regular", size: 20)
-        label.textColor = AppColor.blueCustom
-        label.textAlignment = .center
-        label.contentInset = UIEdgeInsets(top: -12, left: 0, bottom: 0, right: 0)
-        label.text = "Triều đại"
-        label.heightAnchor.constraint(equalToConstant: 24).isActive = true
-        return label
-    }()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        navigationItem.titleView = titleLabel
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.layoutIfNeeded()
+    override func loadView() {
+        super.loadView()
+        prepareForViewController()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        Triều đại
+    }
+    
+    private func prepareForViewController() {
+        navigationController?.navigationBar.isHidden = true
+        addBackground()
+    }
 
     /*
     // MARK: - Navigation

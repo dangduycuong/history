@@ -15,6 +15,7 @@ class PersonTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        backgroundColor = UIColor.clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,9 +24,10 @@ class PersonTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fillData(person: PersonModel) {
+    func fillData(title: String?) {
         avatarImageView.image = R.image.king()
-        nameLabel.text = person.name
+        nameLabel.text = title
+        nameLabel.font = UIFont.systemFont(ofSize: 21)
     }
     
 }

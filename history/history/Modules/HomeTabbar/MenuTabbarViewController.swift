@@ -33,22 +33,24 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
         
         navigationController?.navigationItem.title = "Tabbar"
         
-        dynastyVC = R.storyboard.dynasty.dynastyViewController()
-        timelineVC = R.storyboard.timeline.timelineViewController()
-        personVC = R.storyboard.person.personViewController()
-        territoryVC = R.storyboard.territory.territoryViewController()
-        storiesVC = R.storyboard.stories.storiesViewController()
-        
-        
+        dynastyVC = DynastyViewController()
+        timelineVC = TimelineViewController()
+        personVC = PersonViewController()
+        territoryVC = TerritoryViewController()
+        storiesVC = StoriesViewController()
         
         dynastyVC.tabBarItem.image = R.image.dynasty(compatibleWith: nil)
         dynastyVC.tabBarItem.selectedImage = R.image.dynasty()
+        
         timelineVC.tabBarItem.image = R.image.timeline()
         timelineVC.tabBarItem.selectedImage = R.image.timeline()
+        
         personVC.tabBarItem.image = R.image.king()
         personVC.tabBarItem.selectedImage = R.image.king()
+        
         territoryVC.tabBarItem.image = R.image.territory()
         territoryVC.tabBarItem.selectedImage = R.image.territory()
+        
         storiesVC.tabBarItem.image = R.image.story()
         storiesVC.tabBarItem.selectedImage = R.image.story()
         
@@ -65,6 +67,14 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
         //            tabBar.items![i].title = TabbarTitle.all[i].text
         //            tabBar.items![i].imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
         //        }
+        let tabBarBottomView = UIView()
+        tabBarBottomView.backgroundColor = UIColor.white
+        view.layout(tabBarBottomView)
+            .top(tabBar)
+            .left()
+            .bottom()
+            .right()
+        view.bringSubviewToFront(tabBar)
     }
     
     //MARK: UITabbar Delegate
@@ -104,7 +114,7 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
             tabBarController.title = TabbarTitle.all[index].text
         }
         print("Selected view controller")
-        viewController.title = "hh"
+        //        viewController.title = "hh" // action khi vc được chọn
         
     }
     
