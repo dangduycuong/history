@@ -174,7 +174,7 @@ class BaseTextField: UITextField {
     }
     
     func updatePlaceholder() {
-        if let placeholder = placeholder {
+        if let _ = placeholder {
             //            let centeredParagraphStyle = NSMutableParagraphStyle()
             //            centeredParagraphStyle.alignment = isPlaceholderCenterAligment ? .center : .left
             //            let attributes: [NSAttributedString.Key: Any] = [

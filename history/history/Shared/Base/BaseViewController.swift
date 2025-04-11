@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import Material
 
 class BaseViewController: UIViewController {
     let disposeBag = DisposeBag()
@@ -40,19 +42,21 @@ class BaseViewController: UIViewController {
     }()
     
     func addBackButton() {
-        view.layout(backButton)
-            .centerY(titleLabel)
-            .left(16)
-            .width(40)
-            .height(40)
-        let backImageView = UIImageView(image: R.image.icons8Back()?.withRenderingMode(.alwaysTemplate))
+        let image = UIImage(resource: ImageResource.icons8Back).withRenderingMode(.alwaysTemplate)
+        let backImageView = UIImageView()
+        backImageView.image = image
         backImageView.tintColor = UIColor.black
         
-        backButton.layout(backImageView)
-            .left()
-            .centerY()
+        view.layout(backImageView)
+            .topSafe()
+            .left(16)
             .width(24)
             .height(24)
+        
+        view.layout(backButton)
+            .center(backImageView)
+            .width(40)
+            .height(40)
     }
     
     func addBackground() {
@@ -61,15 +65,16 @@ class BaseViewController: UIViewController {
             .left()
             .bottom()
             .right()
-        
-        backGroundImageView.image = R.image.bia_cat_tong()
+        let image = UIImage(resource: ImageResource.biaCatTong)
+        backGroundImageView.image = image
     }
     
     func addTitle(title: String?) {
         view.layout(titleLabel)
             .topSafe()
             .centerX()
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 21)
+            .height(24)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
         titleLabel.text = title
     }
     
@@ -81,8 +86,8 @@ class BaseViewController: UIViewController {
             .height(40)
         addDataButton.layer.borderWidth = 1
         addDataButton.layer.cornerRadius = 20
-        
-        addDataImageView = UIImageView(image: R.image.add_to_photos_24px()?.withRenderingMode(.alwaysTemplate))
+        let image = UIImage(resource: ImageResource.addToPhotos24Px).withRenderingMode(.alwaysTemplate)
+        addDataImageView.image = image
         addDataImageView.tintColor = UIColor.black
         
         addDataButton.layout(addDataImageView)

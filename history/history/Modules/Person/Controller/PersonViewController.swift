@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 struct FileModel: Codable {
     var title: String?

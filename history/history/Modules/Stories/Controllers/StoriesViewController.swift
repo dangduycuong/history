@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class StoriesViewController: BaseViewController {
     private lazy var searchView: UIView = {
@@ -88,7 +89,7 @@ class StoriesViewController: BaseViewController {
             .width(24)
             .height(24)
         
-        searchImageView.image = R.image.icons8Search()
+        searchImageView.image = UIImage(resource: ImageResource.icons8Search)
         
         searchView.layout(searchTextField)
             .top(4)

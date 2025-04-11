@@ -8,10 +8,6 @@
 import UIKit
 
 class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
-    
-    
-    
-    
     /*
      // MARK: - Navigation
      
@@ -21,11 +17,11 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
      // Pass the selected object to the new view controller.
      }
      */
-    var dynastyVC: DynastyViewController!
-    var timelineVC: TimelineViewController!
-    var personVC: PersonViewController!
-    var territoryVC: TerritoryViewController!
-    var storiesVC: StoriesViewController!
+    private var dynastyVC: DynastyViewController!
+    private var timelineVC: TimelineViewController!
+    private var personVC: PersonViewController!
+    private var territoryVC: TerritoryViewController!
+    private var storiesVC: StoriesViewController!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -39,20 +35,26 @@ class MenuTabbarViewController: UITabBarController, UITabBarControllerDelegate {
         territoryVC = TerritoryViewController()
         storiesVC = StoriesViewController()
         
-        dynastyVC.tabBarItem.image = R.image.dynasty(compatibleWith: nil)
-        dynastyVC.tabBarItem.selectedImage = R.image.dynasty()
-        
-        timelineVC.tabBarItem.image = R.image.timeline()
-        timelineVC.tabBarItem.selectedImage = R.image.timeline()
-        
-        personVC.tabBarItem.image = R.image.king()
-        personVC.tabBarItem.selectedImage = R.image.king()
-        
-        territoryVC.tabBarItem.image = R.image.territory()
-        territoryVC.tabBarItem.selectedImage = R.image.territory()
-        
-        storiesVC.tabBarItem.image = R.image.story()
-        storiesVC.tabBarItem.selectedImage = R.image.story()
+        for item in TabbarTitle.all {
+            let image = item.image
+            switch item {
+            case .dynasty:
+                dynastyVC.tabBarItem.image = image
+                dynastyVC.tabBarItem.selectedImage = image
+            case .timeline:
+                timelineVC.tabBarItem.image = image
+                timelineVC.tabBarItem.selectedImage = image
+            case .person:
+                personVC.tabBarItem.image = image
+                personVC.tabBarItem.selectedImage = image
+            case .territory:
+                territoryVC.tabBarItem.image = image
+                territoryVC.tabBarItem.selectedImage = image
+            case .stories:
+                storiesVC.tabBarItem.image = image
+                storiesVC.tabBarItem.selectedImage = image
+            }
+        }
         
         viewControllers = [dynastyVC, timelineVC, personVC, territoryVC, storiesVC]
         
@@ -129,6 +131,21 @@ enum TabbarTitle {
     case stories
     
     static let all = [dynasty, timeline, person, territory, stories]
+    
+    var image: UIImage? {
+        switch self {
+        case .dynasty:
+            return UIImage(resource: ImageResource.dynasty)
+        case .timeline:
+            return UIImage(resource: ImageResource.timeline)
+        case .person:
+            return UIImage(resource: ImageResource.king)
+        case .territory:
+            return UIImage(resource: ImageResource.territory)
+        case .stories:
+            return UIImage(resource: ImageResource.story)
+        }
+    }
     
     var text: String {
         get {

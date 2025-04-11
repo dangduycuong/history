@@ -7,6 +7,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import IQKeyboardToolbarManager
 import CoreData
 
 @main
@@ -15,11 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Remove before app release.
-        IQKeyboardManager.shared.enable = true
-        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-        IQKeyboardManager.shared.enableAutoToolbar = false
-        IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
-        IQKeyboardManager.shared.keyboardDistanceFromTextField = 80
+        configKeyboard()
         return true
     }
     
@@ -80,6 +77,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func configKeyboard() {
+        // Remove before app release.
+        IQKeyboardManager.shared.isEnabled = true
+        IQKeyboardManager.shared.resignOnTouchOutside = true
+        IQKeyboardToolbarManager.shared.isEnabled = false // IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardToolbarManager.shared.toolbarConfiguration.placeholderConfiguration.showPlaceholder = false
+        IQKeyboardManager.shared.keyboardDistance = 150.0 // IQKeyboardManager.shared.keyboardDistanceFromTextField = 80
     }
     
 }

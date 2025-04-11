@@ -11,7 +11,7 @@ import SystemConfiguration
 class Utils: NSObject {
     
     class func topViewController(_ base: UIViewController? = UIApplication.shared.connectedScenes
-        .filter({$0.activationState == .foregroundActive})
+        .filter({$0.activationState == .foregroundActive || $0.activationState == .foregroundInactive})
         .compactMap({$0 as? UIWindowScene})
         .first?.windows
         .filter({$0.isKeyWindow}).first?.rootViewController) -> UIViewController? {

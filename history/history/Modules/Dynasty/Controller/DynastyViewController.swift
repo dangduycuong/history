@@ -36,7 +36,6 @@ class DynastyViewController: BaseViewController {
     }
     
     private func prepareForViewController() {
-        navigationController?.navigationBar.isHidden = true
         addBackground()
     }
 

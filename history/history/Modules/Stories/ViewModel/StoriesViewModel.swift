@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RxRelay
 
 class StoriesViewModel: BaseViewModel {
     var storiesDataSource = BehaviorRelay<[ContentModel]>(value: [])

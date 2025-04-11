@@ -8,6 +8,8 @@
 import UIKit
 
 class TimelineViewController: BaseViewController {
+    private let viewModel = TimelineViewModel()
+    
     override func loadView() {
         super.loadView()
         prepareForViewController()

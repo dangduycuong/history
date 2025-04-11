@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import RxSwift
+import RxRelay
+import UIKit
 
 class PersonViewModel: BaseViewModel {
     var fetchedPersonDataSource = BehaviorRelay<[PersonModel]>(value: [])

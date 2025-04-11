@@ -25,7 +25,7 @@ class PersonTableViewCell: UITableViewCell {
     }
     
     func fillData(title: String?, searchText: String?) {
-        avatarImageView.image = R.image.king()
+        avatarImageView.image = UIImage(resource: ImageResource.king)
         let font = UIFont.systemFont(ofSize: 21)
         hilightText(searchText: searchText, content: title, label: nameLabel, color: UIColor.black, font: font)
     }

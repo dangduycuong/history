@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class AddPersonViewModel: BaseViewModel {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
